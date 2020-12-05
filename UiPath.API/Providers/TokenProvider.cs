@@ -1,18 +1,16 @@
 ﻿using Newtonsoft.Json;
-using System;
-using System.Collections.Generic;
 using System.Net;
-using System.Text;
 using System.Threading.Tasks;
-using UiPath.API.Models;
+using UiPath.Orchestrator.API;
+using UiPath.Orchestrator.API.Models;
 
-namespace UiPath.API.Services
+namespace UiPath.Orichestrator.API.Services
 {
     public class TokenProvider : ITokenService
     {
         private readonly string _username;
         private readonly string _password;
-        private readonly string _tenantName;
+        private string _tenantName;
         private readonly string _url;
       
         public TokenProvider(string url,
@@ -24,6 +22,12 @@ namespace UiPath.API.Services
             _password = password;
             _tenantName = tenant;
             _url = url;
+        }
+
+        public Task<string> GetToken(string tenantName)
+        {
+            _tenantName = tenantName;
+            return GetToken();
         }
 
         public async Task<string> GetToken()
@@ -59,5 +63,6 @@ namespace UiPath.API.Services
 
             return JsonConvert.SerializeObject(payload);
         }
+
     }
 }

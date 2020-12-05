@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace UiPath.API.Models
+namespace UiPath.Orchestrator.API.Models
 {
     public class AccessToken
     {

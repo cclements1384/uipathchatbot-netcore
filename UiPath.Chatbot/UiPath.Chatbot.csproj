@@ -22,7 +22,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\UiPath.API\UiPath.API.csproj" />
+    <ProjectReference Include="..\UiPath.API\UiPath.Orchestrator.API.csproj" />
   </ItemGroup>
 
   <ItemGroup>
