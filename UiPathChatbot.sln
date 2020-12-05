@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.30517.126
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UiPath.Orchestrator.API", "UiPath.API\UiPath.Orchestrator.API.csproj", "{58761B4C-0FBB-4237-89EA-6C5623C990B7}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UiPath.Orchestrator.API", "UiPath.Orchestrator.API\UiPath.Orchestrator.API.csproj", "{58761B4C-0FBB-4237-89EA-6C5623C990B7}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "UiPath.Chatbot", "UiPath.Chatbot\UiPath.Chatbot.csproj", "{15F69DE7-D9D4-4679-B6D1-72591C547637}"
 EndProject
