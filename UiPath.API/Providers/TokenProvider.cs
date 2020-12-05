@@ -4,7 +4,7 @@ using System.Text;
 
 namespace UiPath.API.Services
 {
-    public class TokenProvider : IUiPathTokenService
+    public class TokenProvider : ITokenService
     {
         private readonly string _username;
         private readonly string _password;
