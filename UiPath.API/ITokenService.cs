@@ -2,7 +2,7 @@
 
 namespace UiPath.API
 {
-    public interface IUiPathTokenService
+    public interface ITokenService
     {
         string GetToken();
     }
