@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace UiPath.Orchestrator.API.Models
+﻿namespace UiPath.Orchestrator.Domain.Models
 {
     public class AccessToken
     {

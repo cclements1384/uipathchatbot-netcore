@@ -1,8 +1,9 @@
 ﻿using Newtonsoft.Json;
 using System.Net;
 using System.Threading.Tasks;
-using UiPath.Orchestrator.API;
-using UiPath.Orchestrator.API.Models;
+using UiPath.Orchestrator.Domain.Services;
+using UiPath.Orchestrator.Domain.Models;
+using System.ComponentModel.Design.Serialization;
 
 namespace UiPath.Orichestrator.API.Services
 {
@@ -12,7 +13,7 @@ namespace UiPath.Orichestrator.API.Services
         private readonly string _password;
         private string _tenantName;
         private readonly string _url;
-      
+             
         public TokenProvider(string url,
             string tenant,
             string username, 

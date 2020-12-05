@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Threading.Tasks;
 
-namespace UiPath.Orchestrator.API
+namespace UiPath.Orchestrator.Domain.Services
 {
     public interface ITokenService
     {
