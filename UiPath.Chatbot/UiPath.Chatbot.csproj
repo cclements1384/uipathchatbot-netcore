@@ -3,8 +3,9 @@
   <PropertyGroup>
     <TargetFramework>netcoreapp3.1</TargetFramework>
     <LangVersion>latest</LangVersion>
+    <UserSecretsId>8436ff84-f065-44f7-9409-4bb9b5b98505</UserSecretsId>
   </PropertyGroup>
-
+  
   <ItemGroup>
     <Content Remove="Cards\welcomeCard.json" />
   </ItemGroup>
