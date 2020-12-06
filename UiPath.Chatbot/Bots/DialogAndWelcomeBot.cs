@@ -40,7 +40,7 @@ namespace Microsoft.BotBuilderSamples.Bots
         // Load attachment from embedded resource.
         private Attachment CreateAdaptiveCardAttachment()
         {
-            var cardResourcePath = "UiPathChatbot.Cards.welcomeCard.json";
+            var cardResourcePath = "UiPath.Chatbot.Cards.welcomeCard.json";
 
             using (var stream = GetType().Assembly.GetManifestResourceStream(cardResourcePath))
             {

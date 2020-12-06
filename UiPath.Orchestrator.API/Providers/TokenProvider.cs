@@ -5,15 +5,16 @@ using UiPath.Orchestrator.Domain.Services;
 using UiPath.Orchestrator.Domain.Models;
 using System.ComponentModel.Design.Serialization;
 
-namespace UiPath.Orichestrator.API.Services
+namespace UiPath.Orichestrator.API.Provider
 {
     public class TokenProvider : ITokenService
     {
         private readonly string _username;
         private readonly string _password;
         private string _tenantName;
-        private readonly string _url;
-             
+        private readonly string _api = "/API/account/Authenticate";
+        private readonly string _url = string.Empty;     
+
         public TokenProvider(string url,
             string tenant,
             string username, 
@@ -22,7 +23,7 @@ namespace UiPath.Orichestrator.API.Services
             _username = username;
             _password = password;
             _tenantName = tenant;
-            _url = url;
+            _url = string.Concat(url, _api);
         }
 
         public Task<string> GetToken(string tenantName)
