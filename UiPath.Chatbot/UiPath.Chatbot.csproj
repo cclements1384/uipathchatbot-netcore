@@ -3,8 +3,9 @@
   <PropertyGroup>
     <TargetFramework>netcoreapp3.1</TargetFramework>
     <LangVersion>latest</LangVersion>
+    <UserSecretsId>8436ff84-f065-44f7-9409-4bb9b5b98505</UserSecretsId>
   </PropertyGroup>
-
+  
   <ItemGroup>
     <Content Remove="Cards\welcomeCard.json" />
   </ItemGroup>
@@ -19,6 +20,11 @@
     <PackageReference Include="Microsoft.Bot.Builder.Dialogs" Version="4.9.2" />
     <PackageReference Include="Microsoft.Bot.Builder.Integration.AspNet.Core" Version="4.9.2" />
     <PackageReference Include="Microsoft.Recognizers.Text.DataTypes.TimexExpression" Version="1.3.2" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\UiPath.Orchestrator.API\UiPath.Orchestrator.API.csproj" />
+    <ProjectReference Include="..\UiPath.Orchestrator.Domain\UiPath.Orchestrator.Domain.csproj" />
   </ItemGroup>
 
   <ItemGroup>

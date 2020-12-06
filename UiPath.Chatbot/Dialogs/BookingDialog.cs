@@ -7,6 +7,9 @@ using Microsoft.Bot.Builder;
 using Microsoft.Bot.Builder.Dialogs;
 using Microsoft.Bot.Schema;
 using Microsoft.Recognizers.Text.DataTypes.TimexExpression;
+using UiPath.Orchestrator.Domain;
+using UiPath.Orchestrator.API.Providers;
+using UiPath.Orichestrator.API.Provider;
 
 namespace Microsoft.BotBuilderSamples.Dialogs
 {
