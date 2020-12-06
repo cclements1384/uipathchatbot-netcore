@@ -10,6 +10,7 @@ using Microsoft.BotBuilderSamples.Dialogs;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
+using UiPath.Chatbot.Dialogs;
 
 namespace Microsoft.BotBuilderSamples
 {
@@ -40,10 +41,11 @@ namespace Microsoft.BotBuilderSamples
             services.AddSingleton<ConversationState>();
 
             // Register LUIS recognizer
-            services.AddSingleton<FlightBookingRecognizer>();
+            services.AddSingleton<UiPathRecognizer>();
 
             // Register the BookingDialog.
-            services.AddSingleton<BookingDialog>();
+            //services.AddSingleton<BookingDialog>();
+            services.AddSingleton<StartProcessDialog>();
 
             // The MainDialog that will be run by the bot.
             services.AddSingleton<MainDialog>();
