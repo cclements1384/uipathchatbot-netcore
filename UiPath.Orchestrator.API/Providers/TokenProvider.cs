@@ -58,9 +58,9 @@ namespace UiPath.Orichestrator.API.Provider
         {
             var payload = new TokenPayload()
             {
-                username = _username,
+                usernameOrEmailAddress = _username,
                 password = _password,
-                tenantName = _tenantName
+                tenancyName = _tenantName
             };
 
             return JsonConvert.SerializeObject(payload);

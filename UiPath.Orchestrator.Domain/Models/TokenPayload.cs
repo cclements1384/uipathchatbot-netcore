@@ -2,8 +2,8 @@
 {
     public class TokenPayload
     {
-        public string username { get; set; }
+        public string usernameOrEmailAddress { get; set; }
         public string password { get; set; }
-        public string tenantName { get; set; }
+        public string tenancyName { get; set; }
     }
 }
